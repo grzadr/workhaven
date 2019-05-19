@@ -98,8 +98,6 @@ RUN chown jovyan:users -R $GIT_DIRECTORY
 USER jovyan
 WORKDIR /home/jovyan
 
-ADD --chown=jovyan:users Rprofile ${HOME}/.Rprofile
-
 # Configure vim
 RUN mkdir .vim \
  && cd .vim \
@@ -128,5 +126,7 @@ RUN mkdir .vim \
  && jupyter nbextension enable collapsible_headings/main
 
 ADD --chown=jovyan:users ./jupyter_notebook_config.py /home/jovyan/.jupyter/jupyter_notebook_config.py
+
+ADD --chown=jovyan:users Rprofile ${HOME}/.Rprofile
 
 WORKDIR /home/jovyan

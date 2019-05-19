@@ -1,0 +1,17 @@
+man
+vim
+nano
+tree
+ncdu
+ctags
+vim-doc
+vim-scripts
+less
+build-essential
+gcc-8-multilib
+g++-8-multilib
+gfortran-8-multilib
+g++-7-multilib
+gfortran-7-multilib
+libsqlite3-dev
+libssl1.0.0 libssl-dev

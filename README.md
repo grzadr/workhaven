@@ -48,7 +48,7 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 |r-rsqlite|2.1.1|
 |r-forecast|8.7|
 |r-nycflights13|1.0|
-|r-sparklyr|1.0.0|
+|r-sparklyr|1.0.1|
 |r-shiny|1.3.2|
 |rpy2|2.9.4|
 |r-rmarkdown|1.12|
@@ -70,10 +70,15 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 |_r-mutex|1.0.0|
 |r-processx|3.3.1|
 |r-rcmdcheck|1.3.3|
+|r-digest|0.6.19|
+|r-fs|1.3.1|
+|r-rvest|0.3.4|
+|#r-nlme|3.4_140|
 
 #### _Python Modules_:
 |      Name      |     Version     |
 |:---------------|:----------------|
+|alembic|1.0.10|
 |wheel|0.33.4|
 |natsort|6.0.0|
 |openpyxl|2.6.2|
@@ -103,9 +108,9 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 |urllib3|1.24.3|
 |requests|2.22.0|
 |fastcache|1.1.0|
-|pygments|2.4.0|
-|boto3|1.9.150|
-|botocore|1.12.150|
+|pygments|2.4.1|
+|boto3|1.9.156|
+|botocore|1.12.156|
 
 #### _Jupyter packages_:
 |      Name      |     Version     |
@@ -120,11 +125,11 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 #### _Python Scientific Modules_:
 |      Name      |     Version     |
 |:---------------|:----------------|
-|matplotlib|3.0.3|
+|matplotlib|3.1.0|
 |numpy|1.16.3|
-|scipy|1.2.1|
+|scipy|1.3.0|
 |statsmodels|0.9|
-|scikit-learn|0.21.1|
+|scikit-learn|0.21.2|
 |openblas|0.3.6|
 |seaborn|0.9|
 |h5py|2.9.0|
@@ -137,7 +142,7 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 |ipykernel|5.1.1|
 |numba|0.43.1|
 |dask|1.2.2|
-|distributed|1.28.0|
+|distributed|1.28.1|
 
 
 ## _Pip Packages_:

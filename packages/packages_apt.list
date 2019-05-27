@@ -11,6 +11,7 @@ build-essential
 gcc-8-multilib
 g++-8-multilib
 gfortran-8-multilib
+gcc-7-multilib
 g++-7-multilib
 gfortran-7-multilib
 libsqlite3-dev

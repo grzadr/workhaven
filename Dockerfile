@@ -1,9 +1,10 @@
 FROM jupyter/minimal-notebook:abdb27a6dfbb
 
-LABEL version=19-05-19
+LABEL version=19-05-26
 LABEL maintainer="Adrian Grzemski <adrian.grzemski@gmail.com>"
 
 USER root
+WORKDIR /home/jovyan
 ENV DEBIAN_FRONTEND noninteractive
 
 # Add usefull aliases
@@ -13,10 +14,11 @@ RUN echo '#!/bin/bash\napt autoremove -y && apt clean -y && rm -rf /var/lib/apt/
 RUN echo '#!/bin/bash\nconda update --all --no-channel-priority "$@"' > /usr/bin/condaup \
  && chmod +x /usr/bin/condaup
 
-ADD --chown=jovyan:users packages ./packages
+RUN mkdir logs
 
 ### Update system
-RUN apt update && apt full-upgrade -y \
+RUN apt update \
+ && apt full-upgrade -y > logs/apt_install.log \
  && apt install -y \
     apt-transport-https \
     ca-certificates \
@@ -24,28 +26,39 @@ RUN apt update && apt full-upgrade -y \
     gnupg-agent \
     software-properties-common \
     apt-utils \
+    >> logs/apt_install.log \
  && add-apt-repository ppa:jonathonf/vim -y \
  && add-apt-repository ppa:ubuntu-toolchain-r/ppa -y \
- && apt update \
+ && apt_vacuum
+
+ADD --chown=jovyan:users packages ./packages
+
+RUN apt update \
  && apt install -y $(cat packages/packages_apt.list | tr '\n' ' ') \
+    >> logs/apt_install.logs \
  && apt_vacuum
 
 RUN (update-alternatives --remove-all gcc || true) \
  && (update-alternatives --remove-all g++ || true) \
  && (update-alternatives --remove-all gfortran || true) \
+# && update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-9 10 \
  && update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-8 10 \
  && update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-7 20 \
  && update-alternatives --set gcc /usr/bin/gcc-8 \
+# && update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-9 10 \
  && update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-8 10 \
  && update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-7 20 \
  && update-alternatives --set g++ /usr/bin/g++-8 \
- && update-alternatives --install /usr/bin/cc cc /usr/bin/gcc 30 \
+ && update-alternatives --install /usr/bin/cc cc /usr/bin/gcc 40 \
  && update-alternatives --set cc /usr/bin/gcc \
- && update-alternatives --install /usr/bin/c++ c++ /usr/bin/g++ 30 \
+ && update-alternatives --install /usr/bin/c++ c++ /usr/bin/g++ 40 \
  && update-alternatives --set c++ /usr/bin/g++ \
+# && update-alternatives --install /usr/bin/gfortran gfortran /usr/bin/gfortran-9 10 \
  && update-alternatives --install /usr/bin/gfortran gfortran /usr/bin/gfortran-8 10 \
  && update-alternatives --install /usr/bin/gfortran gfortran /usr/bin/gfortran-7 20 \
  && update-alternatives --set gfortran /usr/bin/gfortran-8
+
+RUN chown -R jovyan:users logs
 
 USER jovyan
 
@@ -58,13 +71,16 @@ RUN conda update --yes -n base conda > conda_update.log \
  && conda config --add channels r \
  && conda config --add channels conda-forge
 
+ENV CONDA_PYTHON_VERSION=3.6
+ENV CONDA_LIB_DIR=$CONDA_DIR/lib/python$CONDA_PYTHON_VERSION
+
 # Install extra packages listed in conda_packages
 RUN conda install \
     --yes \
     --no-channel-priority \
     --prune \
     --file packages/packages_conda.list \
-    > conda_install.log \
+    > logs/conda_install.log \
 ### Clean cache
  && conda clean --all \
  && conda list > conda_installed.list
@@ -76,7 +92,9 @@ RUN pip install -r packages/packages_pip.list > pip_install.log
 
 USER root
 
-ENV GIT_DIRECTORY=$HOME/Git
+ENV CPATH="/opt/conda/include/:${CPATH}"
+ENV LD_LIBRARY_PATH="/opt/conda/lib"
+ENV GIT_DIRECTORY="$HOME/Git"
 
 WORKDIR $GIT_DIRECTORY
 

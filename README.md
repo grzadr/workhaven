@@ -83,7 +83,7 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 |natsort|6.0.0|
 |openpyxl|2.6.2|
 |pyqt|5.9.2|
-|cython|0.29.8|
+|cython|0.29.9|
 |sqlalchemy|1.3.4|
 |ftputil|3.4|
 |beautifulsoup4|4.7.1|

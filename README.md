@@ -2,7 +2,7 @@
 # WorkHaven
 ## _Environment for Data Science created with Docker!_
 
-## _Version_: 19-05-27
+## _Version_: 19-05-29
 
 ## _Description_:
 
@@ -73,7 +73,8 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 |r-digest|0.6.19|
 |r-fs|1.3.1|
 |r-rvest|0.3.4|
-|#r-nlme|3.4_140|
+|r-pillar|1.4.1|
+|r-evaluate|0.14|
 
 #### _Python Modules_:
 |      Name      |     Version     |
@@ -83,13 +84,13 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 |natsort|6.0.0|
 |openpyxl|2.6.2|
 |pyqt|5.9.2|
-|cython|0.29.7|
-|sqlalchemy|1.3.3|
+|cython|0.29.8|
+|sqlalchemy|1.3.4|
 |ftputil|3.4|
 |beautifulsoup4|4.7.1|
 |autopep8|1.4.4|
 |fastnumbers|2.1.1|
-|bokeh|1.1.0|
+|bokeh|1.2.0|
 |cloudpickle|1.0.0|
 |prettytable|0.7.2|
 |attrs|19.1.0|
@@ -108,9 +109,9 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 |urllib3|1.24.3|
 |requests|2.22.0|
 |fastcache|1.1.0|
-|pygments|2.4.1|
-|boto3|1.9.156|
-|botocore|1.12.156|
+|pygments|2.4.2|
+|boto3|1.9.157|
+|botocore|1.12.157|
 
 #### _Jupyter packages_:
 |      Name      |     Version     |
@@ -126,7 +127,7 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 |      Name      |     Version     |
 |:---------------|:----------------|
 |matplotlib|3.1.0|
-|numpy|1.16.3|
+|numpy|1.16.4|
 |scipy|1.3.0|
 |statsmodels|0.9|
 |scikit-learn|0.21.2|

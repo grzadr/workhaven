@@ -19,8 +19,7 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 |:---------------|:----------------|
 |libgcc-ng|8.2.0|
 |libstdcxx-ng|8.2.0|
-|#python|3.7.3|
-|python|3.6.8|
+|python|3.7.3|
 |qt|5.9.7|
 |sqlite|3.28.0|
 |dropbox|9.3.0|

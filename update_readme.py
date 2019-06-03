@@ -50,8 +50,8 @@ def main():
     print(construct_basic_description(), file=readme)
     print(file=readme)
 
-    for supplier, file_name in (("Conda", "packages/packages_conda.list"),
-                                ("Pip", "packages/packages_pip.list")):
+    for supplier, file_name in (("Conda", "packages/conda.list"),
+                                ("Pip", "packages/pip.list")):
         print(parse_packages(supplier, file_name), file=readme)
 
 

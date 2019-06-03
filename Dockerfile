@@ -1,6 +1,6 @@
 FROM jupyter/minimal-notebook:abdb27a6dfbb
 
-LABEL version=19-05-29
+LABEL version=19-06-03
 LABEL maintainer="Adrian Grzemski <adrian.grzemski@gmail.com>"
 
 USER root
@@ -28,13 +28,13 @@ RUN apt update \
     apt-utils \
     >> logs/apt_install.log \
  && add-apt-repository ppa:jonathonf/vim -y \
- && add-apt-repository ppa:ubuntu-toolchain-r/ppa -y \
+# && add-apt-repository ppa:ubuntu-toolchain-r/ppa -y \
  && apt_vacuum
 
 ADD --chown=jovyan:users packages ./packages
 
 RUN apt update \
- && apt install -y $(cat packages/packages_apt.list | tr '\n' ' ') \
+ && apt install -y $(cat packages/apt.list | tr '\n' ' ') \
     >> logs/apt_install.logs \
  && apt_vacuum
 
@@ -79,7 +79,7 @@ RUN conda install \
     --yes \
     --no-channel-priority \
     --prune \
-    --file packages/packages_conda.list \
+    --file packages/conda.list \
     > logs/conda_install.log \
 ### Clean cache
  && conda clean --all \
@@ -88,7 +88,7 @@ RUN conda install \
 ENV CONDA_PYTHON_VERSION=3.6
 ENV CONDA_LIB_DIR=$CONDA_DIR/lib/python$CONDA_PYTHON_VERSION
 
-RUN pip install -r packages/packages_pip.list > pip_install.log
+RUN pip install -r packages/pip.list > pip_install.log
 
 USER root
 

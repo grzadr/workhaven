@@ -2,7 +2,7 @@
 # WorkHaven
 ## _Environment for Data Science created with Docker!_
 
-## _Version_: 19-05-29
+## _Version_: 19-06-03
 
 ## _Description_:
 
@@ -33,11 +33,12 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 |mawk|1.3.4|
 |lz4-c|1.8.3|
 |libgfortran|3.0.0|
+|openssl|1.1.1c|
 
 #### _Scientific Libraries_:
 |      Name      |     Version     |
 |:---------------|:----------------|
-|blas | 2.10|
+|#blas | 2.10|
 
 #### _R Project_:
 |      Name      |     Version     |
@@ -83,19 +84,19 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 |natsort|6.0.0|
 |openpyxl|2.6.2|
 |pyqt|5.9.2|
-|cython|0.29.9|
+|cython|0.29.10|
 |sqlalchemy|1.3.4|
 |ftputil|3.4|
 |beautifulsoup4|4.7.1|
 |autopep8|1.4.4|
 |fastnumbers|2.1.1|
 |bokeh|1.2.0|
-|cloudpickle|1.0.0|
+|cloudpickle|1.1.1|
 |prettytable|0.7.2|
 |attrs|19.1.0|
 |lz4|2.1.6|
-|protobuf|3.7.1|
-|libprotobuf|3.7.1|
+|protobuf|3.8.0|
+|libprotobuf|3.8.0|
 |google-api-core|1.11.0|
 |pyyaml|5.1|
 |decorator|4.4.0|
@@ -109,8 +110,8 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 |requests|2.22.0|
 |fastcache|1.1.0|
 |pygments|2.4.2|
-|boto3|1.9.157|
-|botocore|1.12.157|
+|boto3|1.9.159|
+|botocore|1.12.159|
 
 #### _Jupyter packages_:
 |      Name      |     Version     |

@@ -1,4 +1,4 @@
-FROM jupyter/minimal-notebook:abdb27a6dfbb
+FROM jupyter/minimal-notebook:d4cbf2f80a2a
 
 LABEL version=19-06-03
 LABEL maintainer="Adrian Grzemski <adrian.grzemski@gmail.com>"
@@ -31,8 +31,10 @@ RUN apt update \
 # && add-apt-repository ppa:ubuntu-toolchain-r/ppa -y \
  && apt_vacuum
 
-ADD --chown=jovyan:users packages ./packages
-
+RUN mkdir packages && chown -R jovyan:users packages
+ADD --chown=jovyan:users packages/apt.list ./packages/apt.list
+RUN ls -lha packages
+RUN cat packages/apt.list
 RUN apt update \
  && apt install -y $(cat packages/apt.list | tr '\n' ' ') \
     >> logs/apt_install.logs \
@@ -75,6 +77,7 @@ ENV CONDA_PYTHON_VERSION=3.7
 ENV CONDA_LIB_DIR=$CONDA_DIR/lib/python$CONDA_PYTHON_VERSION
 
 # Install extra packages listed in conda_packages
+ADD --chown=jovyan:users packages/conda.list ./packages/conda.list
 RUN conda install \
     --yes \
     --no-channel-priority \
@@ -85,9 +88,7 @@ RUN conda install \
  && conda clean --all \
  && conda list > conda_installed.list
 
-ENV CONDA_PYTHON_VERSION=3.6
-ENV CONDA_LIB_DIR=$CONDA_DIR/lib/python$CONDA_PYTHON_VERSION
-
+ADD --chown=jovyan:users packages/pip.list ./packages/pip.list
 RUN pip install -r packages/pip.list > pip_install.log
 
 USER root

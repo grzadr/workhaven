@@ -2,7 +2,7 @@
 # WorkHaven
 ## _Environment for Data Science created with Docker!_
 
-## _Version_: 19-06-03
+## _Version_: 19-06-06
 
 ## _Description_:
 
@@ -23,7 +23,7 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 |qt|5.9.7|
 |sqlite|3.28.0|
 |dropbox|9.3.0|
-|cmake|3.14.4|
+|cmake|3.14.5|
 |markdown|3.1|
 |powerline-status|2.7|
 |zstd|1.4.0|
@@ -110,8 +110,8 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 |requests|2.22.0|
 |fastcache|1.1.0|
 |pygments|2.4.2|
-|boto3|1.9.159|
-|botocore|1.12.159|
+|boto3|1.9.162|
+|botocore|1.12.162|
 
 #### _Jupyter packages_:
 |      Name      |     Version     |

@@ -1,6 +1,6 @@
 FROM jupyter/minimal-notebook:d4cbf2f80a2a
 
-LABEL version=19-06-03
+LABEL version=19-06-23
 LABEL maintainer="Adrian Grzemski <adrian.grzemski@gmail.com>"
 
 USER root
@@ -28,7 +28,6 @@ RUN apt update \
     apt-utils \
     >> logs/apt_install.log \
  && add-apt-repository ppa:jonathonf/vim -y \
-# && add-apt-repository ppa:ubuntu-toolchain-r/ppa -y \
  && apt_vacuum
 
 RUN mkdir packages && chown -R jovyan:users packages

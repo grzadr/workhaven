@@ -1,6 +1,7 @@
-FROM jupyter/minimal-notebook:d4cbf2f80a2a
+# FROM jupyter/minimal-notebook:d4cbf2f80a2a
+FROM jupyter/minimal-notebook:54462805efcb
 
-LABEL version=19-06-23
+LABEL version=20-06-28
 LABEL maintainer="Adrian Grzemski <adrian.grzemski@gmail.com>"
 
 USER root
@@ -8,10 +9,11 @@ WORKDIR /home/jovyan
 ENV DEBIAN_FRONTEND noninteractive
 
 # Add usefull aliases
-RUN echo '#!/bin/bash\nls -lhaF "$@"' > /usr/bin/ll && chmod +x /usr/bin/ll
-RUN echo '#!/bin/bash\napt autoremove -y && apt clean -y && rm -rf /var/lib/apt/lists/' > /usr/bin/apt_vacuum \
+RUN echo -e '#!/bin/bash\nls -lhaF "$@"' > /usr/bin/ll \
+ && chmod +x /usr/bin/ll
+RUN echo -e '#!/bin/bash\napt autoremove -y && apt clean -y && rm -rf /var/lib/apt/lists/' > /usr/bin/apt_vacuum \
  && chmod +x /usr/bin/apt_vacuum
-RUN echo '#!/bin/bash\nconda update --all --no-channel-priority "$@"' > /usr/bin/condaup \
+RUN echo -e '#!/bin/bash\nconda update --all --no-channel-priority "$@"' > /usr/bin/condaup \
  && chmod +x /usr/bin/condaup
 
 RUN mkdir logs
@@ -42,22 +44,22 @@ RUN apt update \
 RUN (update-alternatives --remove-all gcc || true) \
  && (update-alternatives --remove-all g++ || true) \
  && (update-alternatives --remove-all gfortran || true) \
-# && update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-9 10 \
- && update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-8 10 \
- && update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-7 20 \
- && update-alternatives --set gcc /usr/bin/gcc-8 \
-# && update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-9 10 \
- && update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-8 10 \
- && update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-7 20 \
- && update-alternatives --set g++ /usr/bin/g++-8 \
+ && update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-9 10 \
+#  && update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-8 10 \
+#  && update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-7 20 \
+ && update-alternatives --set gcc /usr/bin/gcc-9 \
+ && update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-9 10 \
+#  && update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-8 10 \
+#  && update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-7 20 \
+ && update-alternatives --set g++ /usr/bin/g++-9 \
  && update-alternatives --install /usr/bin/cc cc /usr/bin/gcc 40 \
  && update-alternatives --set cc /usr/bin/gcc \
  && update-alternatives --install /usr/bin/c++ c++ /usr/bin/g++ 40 \
  && update-alternatives --set c++ /usr/bin/g++ \
-# && update-alternatives --install /usr/bin/gfortran gfortran /usr/bin/gfortran-9 10 \
- && update-alternatives --install /usr/bin/gfortran gfortran /usr/bin/gfortran-8 10 \
- && update-alternatives --install /usr/bin/gfortran gfortran /usr/bin/gfortran-7 20 \
- && update-alternatives --set gfortran /usr/bin/gfortran-8
+ && update-alternatives --install /usr/bin/gfortran gfortran /usr/bin/gfortran-9 10 \
+#  && update-alternatives --install /usr/bin/gfortran gfortran /usr/bin/gfortran-8 10 \
+#  && update-alternatives --install /usr/bin/gfortran gfortran /usr/bin/gfortran-7 20 \
+ && update-alternatives --set gfortran /usr/bin/gfortran-9
 
 RUN chown -R jovyan:users logs
 

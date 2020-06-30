@@ -36,6 +36,8 @@ def parse_packages(supplier, file_name):
             output += "#### _{}_:\n".format(line.lstrip("# "))
             output += "|      Name      |     Version     |\n"
             output += "|:---------------|:----------------|\n"
+        elif line.startswith("#"):
+            continue
         elif not len(line):
             output += "\n"
         else:

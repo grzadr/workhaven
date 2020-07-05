@@ -2,7 +2,7 @@
 # WorkHaven
 ## _Environment for Data Science created with Docker!_
 
-## _Version_: 20-06-30
+## _Version_: 20-07-05
 
 ## _Description_:
 
@@ -14,6 +14,9 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 
 
 ## _Conda Packages_:
+#### _General Software_:
+|      Name      |     Version     |
+|:---------------|:----------------|
 |python|3.8.3|
 |qt|5.12.5|
 |sqlite|3.32.3|
@@ -23,10 +26,6 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 |zstd|1.4.4|
 |gawk|5.1.0|
 |mawk|1.3.4|
-
-#### _Scientific Libraries_:
-|      Name      |     Version     |
-|:---------------|:----------------|
 
 #### _R Project_:
 |      Name      |     Version     |
@@ -41,6 +40,7 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 |sqlalchemy|1.3.18|
 |beautifulsoup4|4.9.1|
 |autopep8|1.5.3|
+|setuptools|49.1.0|
 
 #### _Jupyter packages_:
 |      Name      |     Version     |
@@ -64,10 +64,10 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 |h5py|2.10.0|
 |hdf5|1.10.6|
 |pandas|1.0.5|
-|pandoc|2.9.2.1|
+|pandoc|2.10|
 |ipython|7.16.1|
 |ipykernel|5.3.0|
-|dask|2.19.0|
+|dask|2.20.0|
 
 
 ## _Pip Packages_:

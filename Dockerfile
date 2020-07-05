@@ -1,5 +1,5 @@
 # FROM jupyter/minimal-notebook:d4cbf2f80a2a
-FROM jupyter/minimal-notebook:54462805efcb
+FROM jupyter/minimal-notebook:5197709e9f23
 
 LABEL version=20-06-28
 LABEL maintainer="Adrian Grzemski <adrian.grzemski@gmail.com>"
@@ -74,7 +74,7 @@ RUN conda update --yes -n base conda > conda_update.log \
  && conda config --add channels r \
  && conda config --add channels conda-forge
 
-ENV CONDA_PYTHON_VERSION=3.7
+ENV CONDA_PYTHON_VERSION=3.8
 ENV CONDA_LIB_DIR=$CONDA_DIR/lib/python$CONDA_PYTHON_VERSION
 
 # Install extra packages listed in conda_packages

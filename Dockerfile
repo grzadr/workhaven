@@ -18,6 +18,8 @@ RUN echo -e '#!/bin/bash\nconda update --all --no-channel-priority "$@"' > /usr/
 
 RUN mkdir logs
 
+RUN echo "jovyan:jovyan" | chpasswd
+
 ### Update system
 RUN apt update \
  && apt full-upgrade -y > logs/apt_install.log \
@@ -40,6 +42,16 @@ RUN apt update \
  && apt install -y $(cat packages/apt.list | tr '\n' ' ') \
     >> logs/apt_install.logs \
  && apt_vacuum
+
+ENV RSTUDIO_DEB rstudio-server-1.3.959-amd64.deb
+
+RUN apt update \
+ && wget https://download2.rstudio.org/server/bionic/amd64/${RSTUDIO_DEB} \
+ && gdebi -n ${RSTUDIO_DEB} \
+ && rm ${RSTUDIO_DEB} \
+ && apt_vacuum
+
+ADD RConfig/rserver.conf /etc/rstudio/rserver.conf
 
 RUN (update-alternatives --remove-all gcc || true) \
  && (update-alternatives --remove-all g++ || true) \
@@ -145,8 +157,8 @@ RUN mkdir .vim \
  && jupyter nbextension enable hide_input_all/main \
  && jupyter nbextension enable collapsible_headings/main
 
-ADD --chown=jovyan:users ./jupyter_notebook_config.py /home/jovyan/.jupyter/jupyter_notebook_config.py
+ADD --chown=jovyan:users JupyterConfig/jupyter_notebook_config.py /home/jovyan/.jupyter/jupyter_notebook_config.py
 
-ADD --chown=jovyan:users Rprofile ${HOME}/.Rprofile
+ADD --chown=jovyan:users RConfig/Rprofile ${HOME}/.Rprofile
 
 WORKDIR /home/jovyan

@@ -2,7 +2,7 @@
 # WorkHaven
 ## _Environment for Data Science created with Docker!_
 
-## _Version_: 20-07-05
+## _Version_: 20-07-06
 
 ## _Description_:
 
@@ -31,6 +31,8 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 |      Name      |     Version     |
 |:---------------|:----------------|
 |r-base|4.0.2|
+|r-tidyverse|1.3.0|
+|r-ggplot2|3.3.2|
 
 #### _Python Modules_:
 |      Name      |     Version     |

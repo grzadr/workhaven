@@ -1,5 +1,4 @@
-# FROM jupyter/minimal-notebook:d4cbf2f80a2a
-FROM jupyter/minimal-notebook:5197709e9f23
+FROM jupyter/minimal-notebook:ea01ec4d9f57
 
 LABEL version=20-06-28
 LABEL maintainer="Adrian Grzemski <adrian.grzemski@gmail.com>"

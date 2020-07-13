@@ -40,8 +40,10 @@ def parse_packages(supplier, file_name):
             continue
         elif not len(line):
             output += "\n"
-        else:
+        elif "=" in line or "==" in line:
             output += "|{}|{}|\n".format(*line.rstrip().replace("==", "=").split("="))
+        else:
+            output += "|{}|NA|\n".format(line)
 
     return output
 

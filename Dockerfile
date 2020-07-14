@@ -100,7 +100,7 @@ RUN conda install \
  && conda list > conda_installed.list
 
 ADD --chown=jovyan:users packages/pip.list ./packages/pip.list
-RUN pip install -r packages/pip.list > pip_install.log
+RUN pip3 install -r packages/pip.list > pip_install.log
 
 USER root
 

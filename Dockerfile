@@ -82,7 +82,6 @@ RUN rm /opt/conda/conda-meta/pinned
 RUN conda update --yes -n base conda > conda_update.log \
  && conda config --add channels bioconda \
  && conda config --add channels defaults \
- && conda config --add channels r \
  && conda config --add channels conda-forge
 
 ENV CONDA_PYTHON_VERSION=3.8

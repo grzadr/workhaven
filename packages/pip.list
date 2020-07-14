@@ -1,5 +1,8 @@
-# Plotting
+### R
+rpy2==3.3.5
+
+### Plotting
 venn==0.1.3
 
-# Formatting
-roman==3.2
+### Formatting
+roman==3.3

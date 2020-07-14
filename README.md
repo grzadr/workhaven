@@ -2,7 +2,7 @@
 # WorkHaven
 ## _Environment for Data Science created with Docker!_
 
-## _Version_: 20-07-06
+## _Version_: 20-07-14
 
 ## _Description_:
 
@@ -26,23 +26,30 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 |zstd|1.4.4|
 |gawk|5.1.0|
 |mawk|1.3.4|
+|llvm-openmp|10.0.0|
+|gcc_linux-64|7.5.0|
+|gxx_linux-64|7.5.0|
+|gfortran_linux-64|7.5.0|
 
 #### _R Project_:
 |      Name      |     Version     |
 |:---------------|:----------------|
 |r-base|4.0.2|
+|r-devtools|2.3.0|
 |r-tidyverse|1.3.0|
 |r-ggplot2|3.3.2|
+|r-rmarkdown|2.3|
+|r-markdown|1.1|
 
 #### _Python Modules_:
 |      Name      |     Version     |
 |:---------------|:----------------|
 |natsort|7.0.1|
-|cython|0.29.20|
+|cython|0.29.21|
 |sqlalchemy|1.3.18|
 |beautifulsoup4|4.9.1|
 |autopep8|1.5.3|
-|setuptools|49.1.0|
+|setuptools|49.2.0|
 
 #### _Jupyter packages_:
 |      Name      |     Version     |
@@ -68,11 +75,15 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 |pandas|1.0.5|
 |pandoc|2.10|
 |ipython|7.16.1|
-|ipykernel|5.3.0|
+|ipykernel|5.3.2|
 |dask|2.20.0|
 
-
 ## _Pip Packages_:
+#### _R_:
+|      Name      |     Version     |
+|:---------------|:----------------|
+|rpy2|3.3.5|
+
 #### _Plotting_:
 |      Name      |     Version     |
 |:---------------|:----------------|
@@ -81,5 +92,5 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 #### _Formatting_:
 |      Name      |     Version     |
 |:---------------|:----------------|
-|roman|3.2|
+|roman|3.3|
 

@@ -32,7 +32,7 @@ def parse_packages(supplier, file_name):
     for line in open(file_name, "r"):
         line = line.rstrip()
 
-        if line.startswith("# "):
+        if line.startswith("### "):
             output += "#### _{}_:\n".format(line.lstrip("# "))
             output += "|      Name      |     Version     |\n"
             output += "|:---------------|:----------------|\n"

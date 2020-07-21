@@ -2,7 +2,7 @@
 # WorkHaven
 ## _Environment for Data Science created with Docker!_
 
-## _Version_: 20-07-14
+## _Version_: 20-07-21
 
 ## _Description_:
 
@@ -17,13 +17,13 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 #### _General Software_:
 |      Name      |     Version     |
 |:---------------|:----------------|
-|python|3.8.3|
+|python|3.8.4|
 |qt|5.12.5|
 |sqlite|3.32.3|
 |cmake|3.17.0|
 |markdown|3.2.2|
 |powerline-status|2.7|
-|zstd|1.4.4|
+|zstd|1.4.5|
 |gawk|5.1.0|
 |mawk|1.3.4|
 |llvm-openmp|10.0.0|
@@ -59,14 +59,14 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 |jupyter_nbextensions_configurator|0.4.1|
 |jupyter_contrib_nbextensions|0.5.1|
 |jupyterhub|1.1.0|
-|jupyterlab|2.1.5|
+|jupyterlab|2.2.0|
 
 #### _Python Scientific Modules_:
 |      Name      |     Version     |
 |:---------------|:----------------|
-|matplotlib|3.2.2|
-|numpy|1.18.5|
-|scipy|1.5.0|
+|matplotlib|3.3.0|
+|numpy|1.19.0|
+|scipy|1.5.1|
 |statsmodels|0.11.1|
 |scikit-learn|0.23.1|
 |seaborn|0.10.1|
@@ -75,8 +75,8 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 |pandas|1.0.5|
 |pandoc|2.10|
 |ipython|7.16.1|
-|ipykernel|5.3.2|
-|dask|2.20.0|
+|ipykernel|5.3.3|
+|dask|2.21.0|
 
 ## _Pip Packages_:
 #### _R_:

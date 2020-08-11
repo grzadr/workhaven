@@ -10,3 +10,6 @@ python3 update_readme.py
 docker build --pull \
   -t "${IMAGE_NAME}:${IMAGE_TAG}" \
   .
+
+docker tag "${IMAGE_NAME}:${IMAGE_TAG}" "${IMAGE_NAME}:latest"
+

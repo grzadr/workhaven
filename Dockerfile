@@ -1,6 +1,6 @@
-FROM jupyter/minimal-notebook:latest
+FROM jupyter/minimal-notebook:6d42503c684f
 
-LABEL version=20-08-26
+LABEL version=2020-08-29
 LABEL maintainer="Adrian Grzemski <adrian.grzemski@gmail.com>"
 
 USER root
@@ -153,7 +153,8 @@ RUN mkdir .vim \
  && jupyter nbextension enable varInspector/main \
  && jupyter nbextension enable code_font_size/code_font_size \
  && jupyter nbextension enable hide_input_all/main \
- && jupyter nbextension enable collapsible_headings/main
+ && jupyter nbextension enable collapsible_headings/main \
+ && jt -t onedork -fs 95 -altp -tfs 11 -nfs 115 -cellw 88% -T
 
 ADD --chown=jovyan:users JupyterConfig/jupyter_notebook_config.py /home/jovyan/.jupyter/jupyter_notebook_config.py
 

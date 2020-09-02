@@ -2,7 +2,7 @@
 # WorkHaven
 ## _Environment for Data Science created with Docker!_
 
-## _Version_: 20-08-25
+## _Version_: 20-08-29
 
 ## _Description_:
 
@@ -18,9 +18,9 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 |      Name      |     Version     |
 |:---------------|:----------------|
 |python|3.8.5|
-|qt|5.12.5|
+|qt|5.12.6|
 |sqlite|3.33.0|
-|cmake|3.18.0|
+|cmake|3.18.2|
 |markdown|3.2.2|
 |powerline-status|2.7|
 |zstd|1.4.5|
@@ -50,6 +50,14 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 |beautifulsoup4|4.9.1|
 |autopep8|1.5.4|
 |setuptools|49.6.0|
+|black|19.10b0|
+|nb_black|1.0.7|
+|flake8-black|0.2.1|
+|flake8|3.8.3|
+|mypy|0.782|
+|pylint|2.6.0|
+|yapf|0.30.0|
+|pytest|6.0.1|
 
 #### _Jupyter packages_:
 |      Name      |     Version     |
@@ -60,6 +68,7 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 |jupyter_contrib_nbextensions|0.5.1|
 |jupyterhub|1.1.0|
 |jupyterlab|2.2.6|
+|jupyterthemes|0.20.0|
 
 #### _Python Scientific Modules_:
 |      Name      |     Version     |
@@ -67,16 +76,16 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 |matplotlib|3.3.1|
 |numpy|1.19.1|
 |scipy|1.5.2|
-|statsmodels|0.11.1|
+|statsmodels|0.12.0|
 |scikit-learn|0.23.2|
 |seaborn|0.10.1|
 |h5py|2.10.0|
 |hdf5|1.10.6|
 |pandas|1.1.1|
 |pandoc|2.10.1|
-|ipython|7.17.0|
+|ipython|7.18.0|
 |ipykernel|5.3.4|
-|dask|2.24.0|
+|dask|2.25.0|
 
 ## _Pip Packages_:
 #### _R_:

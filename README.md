@@ -1,10 +1,11 @@
 
 # WorkHaven
+
 ## _Environment for Data Science created with Docker!_
 
-## _Version_: 20-08-29
+## _Version_: 2020-09-02
 
-## _Description_:
+## _Description_
 
 This repository contains Docker environment for data mining and statistical analyses, data exploration and mining and many more. It is based on Jupyter
 repository
@@ -12,9 +13,10 @@ repository
 Additional packages are installed with conda and pip.
 Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 
+## _Conda Packages_
 
-## _Conda Packages_:
-#### _General Software_:
+### _General Software_
+
 |      Name      |     Version     |
 |:---------------|:----------------|
 |python|3.8.5|
@@ -31,7 +33,8 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 |gxx_linux-64|7.5.0|
 |gfortran_linux-64|7.5.0|
 
-#### _R Project_:
+### _R Project_
+
 |      Name      |     Version     |
 |:---------------|:----------------|
 |r-base|4.0.2|
@@ -41,7 +44,8 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 |r-rmarkdown|2.3|
 |r-markdown|1.1|
 
-#### _Python Modules_:
+### _Python Modules_
+
 |      Name      |     Version     |
 |:---------------|:----------------|
 |natsort|7.0.1|
@@ -51,7 +55,6 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 |autopep8|1.5.4|
 |setuptools|49.6.0|
 |black|19.10b0|
-|nb_black|1.0.7|
 |flake8-black|0.2.1|
 |flake8|3.8.3|
 |mypy|0.782|
@@ -59,7 +62,8 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 |yapf|0.30.0|
 |pytest|6.0.1|
 
-#### _Jupyter packages_:
+### _Jupyter packages_
+
 |      Name      |     Version     |
 |:---------------|:----------------|
 |notebook|6.1.3|
@@ -70,7 +74,8 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 |jupyterlab|2.2.6|
 |jupyterthemes|0.20.0|
 
-#### _Python Scientific Modules_:
+### _Python Scientific Modules_
+
 |      Name      |     Version     |
 |:---------------|:----------------|
 |matplotlib|3.3.1|
@@ -87,18 +92,22 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 |ipykernel|5.3.4|
 |dask|2.25.0|
 
-## _Pip Packages_:
-#### _R_:
+## _Pip Packages_
+
+### _R_
+
 |      Name      |     Version     |
 |:---------------|:----------------|
 |rpy2|3.3.5|
 
-#### _Plotting_:
+### _Plotting_
+
 |      Name      |     Version     |
 |:---------------|:----------------|
 |venn|0.1.3|
 
-#### _Formatting_:
+### _Formatting_
+
 |      Name      |     Version     |
 |:---------------|:----------------|
 |roman|3.3|

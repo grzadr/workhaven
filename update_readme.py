@@ -4,17 +4,18 @@ from time import gmtime, strftime
 
 
 def get_current_date():
-    return strftime("%y-%m-%d", gmtime())
+    return strftime("%Y-%m-%d", gmtime())
 
 
 def construct_basic_description():
     description = """
 # WorkHaven
+
 ## _Environment for Data Science created with Docker!_
 
 ## _Version_: {}
 
-## _Description_:
+## _Description_
 
 This repository contains Docker environment for data mining and statistical analyses, data exploration and mining and many more. It is based on Jupyter
 repository
@@ -27,13 +28,13 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 
 
 def parse_packages(supplier, file_name):
-    output = "## _{} Packages_:\n".format(supplier)
+    output = "## _{} Packages_\n\n".format(supplier)
 
     for line in open(file_name, "r"):
         line = line.rstrip()
 
         if line.startswith("### "):
-            output += "#### _{}_:\n".format(line.lstrip("# "))
+            output += "### _{}_\n\n".format(line.lstrip("# "))
             output += "|      Name      |     Version     |\n"
             output += "|:---------------|:----------------|\n"
         elif line.startswith("#"):
@@ -52,7 +53,6 @@ def main():
     readme = open("README.md", "w")
 
     print(construct_basic_description(), file=readme)
-    print(file=readme)
 
     for supplier, file_name in (("Conda", "packages/conda.list"),
                                 ("Pip", "packages/pip.list")):

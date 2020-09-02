@@ -1,6 +1,6 @@
 FROM jupyter/minimal-notebook:6d42503c684f
 
-LABEL version=2020-08-29
+LABEL version=2020-09-02
 LABEL maintainer="Adrian Grzemski <adrian.grzemski@gmail.com>"
 
 USER root
@@ -139,6 +139,7 @@ RUN mkdir .vim \
 
 #Configure Jupyter notebooks
  RUN jupyter contrib nbextension install --user \
+ && jupyter nbextension install https://github.com/drillan/jupyter-black/archive/master.zip --user \
  && jupyter nbextension enable scroll_down/main \
  && jupyter nbextension enable toc2/main \
  && jupyter nbextension enable execute_time/ExecuteTime \
@@ -148,12 +149,12 @@ RUN mkdir .vim \
  && jupyter nbextension enable contrib_nbextensions_help_item/main \
  && jupyter nbextension enable hinterland/hinterland \
  && jupyter nbextension enable python-markdown/main \
- && jupyter nbextension enable code_prettify/autopep8 \
  && jupyter nbextension enable snippets/main \
  && jupyter nbextension enable varInspector/main \
  && jupyter nbextension enable code_font_size/code_font_size \
  && jupyter nbextension enable hide_input_all/main \
  && jupyter nbextension enable collapsible_headings/main \
+ && jupyter nbextension enable jupyter-black-master/jupyter-black \
  && jt -t onedork -fs 95 -altp -tfs 11 -nfs 115 -cellw 88% -T
 
 ADD --chown=jovyan:users JupyterConfig/jupyter_notebook_config.py /home/jovyan/.jupyter/jupyter_notebook_config.py

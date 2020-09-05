@@ -5,8 +5,9 @@ set -eux
 DATE_TAG=$(date '+%F')
 IMAGE_TAG=${1:-${DATE_TAG}}
 
-cp Dockerfile Dockerfile.old
-cat Dockerfile.old | sed "s/LABEL version=[0-9]\{2\}-[0-9]\{2\}-[0-9]\{2\}/LABEL version=${IMAGE_TAG}/" > Dockerfile
+sed -i.old "s/LABEL version=[0-9]\{4\}-[0-9]\{2\}-[0-9]\{2\}/LABEL version=${IMAGE_TAG}/" Dockerfile
+
+exit 0
 
 IMAGE_NAME="grzadr/workhaven"
 python3 update_readme.py

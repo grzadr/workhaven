@@ -3,7 +3,7 @@
 
 ## _Environment for Data Science created with Docker!_
 
-## _Version_: 2020-09-05
+## _Version_: 2020-09-19
 
 ## _Description_
 
@@ -38,7 +38,7 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 |      Name      |     Version     |
 |:---------------|:----------------|
 |r-base|4.0.2|
-|r-devtools|2.3.1|
+|r-devtools|2.3.2|
 |r-tidyverse|1.3.0|
 |r-ggplot2|3.3.2|
 |r-rmarkdown|2.3|
@@ -60,37 +60,37 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 |mypy|0.782|
 |pylint|2.6.0|
 |yapf|0.30.0|
-|pytest|6.0.1|
+|pytest|6.0.2|
 
 ### _Jupyter packages_
 
 |      Name      |     Version     |
 |:---------------|:----------------|
-|notebook|6.1.3|
-|nbconvert|5.6.1|
+|notebook|6.1.4|
+|nbconvert|6.0.3|
 |jupyter_nbextensions_configurator|0.4.1|
 |jupyter_contrib_nbextensions|0.5.1|
 |jupyterhub|1.1.0|
-|jupyterlab|2.2.6|
+|jupyterlab|2.2.8|
 |jupyterthemes|0.20.0|
 
 ### _Python Scientific Modules_
 
 |      Name      |     Version     |
 |:---------------|:----------------|
-|matplotlib|3.3.1|
+|matplotlib|3.3.2|
 |numpy|1.19.1|
 |scipy|1.5.2|
 |statsmodels|0.12.0|
 |scikit-learn|0.23.2|
-|seaborn|0.10.1|
+|seaborn|0.11.0|
 |h5py|2.10.0|
 |hdf5|1.10.6|
-|pandas|1.1.1|
+|pandas|1.1.2|
 |pandoc|2.10.1|
 |ipython|7.18.1|
 |ipykernel|5.3.4|
-|dask|2.25.0|
+|dask|2.27.0|
 
 ## _Pip Packages_
 

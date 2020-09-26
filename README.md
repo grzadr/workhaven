@@ -3,7 +3,7 @@
 
 ## _Environment for Data Science created with Docker!_
 
-## _Version_: 2020-09-19
+## _Version_: 2020-09-26
 
 ## _Description_
 
@@ -51,7 +51,7 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 |natsort|7.0.1|
 |cython|0.29.21|
 |sqlalchemy|1.3.19|
-|beautifulsoup4|4.9.1|
+|beautifulsoup4|4.9.2|
 |autopep8|1.5.4|
 |setuptools|49.6.0|
 |black|20.8b1|
@@ -61,13 +61,14 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 |pylint|2.6.0|
 |yapf|0.30.0|
 |pytest|6.0.2|
+|setuptools|49.6.0|
 
 ### _Jupyter packages_
 
 |      Name      |     Version     |
 |:---------------|:----------------|
 |notebook|6.1.4|
-|nbconvert|6.0.3|
+|nbconvert|6.0.6|
 |jupyter_nbextensions_configurator|0.4.1|
 |jupyter_contrib_nbextensions|0.5.1|
 |jupyterhub|1.1.0|
@@ -90,7 +91,7 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 |pandoc|2.10.1|
 |ipython|7.18.1|
 |ipykernel|5.3.4|
-|dask|2.27.0|
+|dask|2.28.0|
 
 ## _Pip Packages_
 

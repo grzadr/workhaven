@@ -3,7 +3,7 @@
 
 ## _Environment for Data Science created with Docker!_
 
-## _Version_: 2020-09-26
+## _Version_: 2020-10-13
 
 ## _Description_
 
@@ -19,11 +19,11 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 
 |      Name      |     Version     |
 |:---------------|:----------------|
-|python|3.8.5|
+|python|3.8.6|
 |qt|5.12.9|
 |sqlite|3.33.0|
 |cmake|3.18.2|
-|markdown|3.2.2|
+|markdown|3.3.1|
 |powerline-status|2.7|
 |zstd|1.4.5|
 |gawk|5.1.0|
@@ -37,11 +37,11 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 
 |      Name      |     Version     |
 |:---------------|:----------------|
-|r-base|4.0.2|
+|r-base|4.0.3|
 |r-devtools|2.3.2|
 |r-tidyverse|1.3.0|
 |r-ggplot2|3.3.2|
-|r-rmarkdown|2.3|
+|r-rmarkdown|2.4|
 |r-markdown|1.1|
 
 ### _Python Modules_
@@ -50,25 +50,25 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 |:---------------|:----------------|
 |natsort|7.0.1|
 |cython|0.29.21|
-|sqlalchemy|1.3.19|
-|beautifulsoup4|4.9.2|
+|sqlalchemy|1.3.20|
+|beautifulsoup4|4.9.3|
 |autopep8|1.5.4|
-|setuptools|49.6.0|
+|setuptools|50.3.0|
 |black|20.8b1|
 |flake8-black|0.2.1|
-|flake8|3.8.3|
-|mypy|0.782|
+|flake8|3.8.4|
+|mypy|0.790|
 |pylint|2.6.0|
 |yapf|0.30.0|
-|pytest|6.0.2|
-|setuptools|49.6.0|
+|pytest|6.1.1|
+|setuptools|50.3.0|
 
 ### _Jupyter packages_
 
 |      Name      |     Version     |
 |:---------------|:----------------|
 |notebook|6.1.4|
-|nbconvert|6.0.6|
+|nbconvert|6.0.7|
 |jupyter_nbextensions_configurator|0.4.1|
 |jupyter_contrib_nbextensions|0.5.1|
 |jupyterhub|1.1.0|
@@ -80,18 +80,18 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 |      Name      |     Version     |
 |:---------------|:----------------|
 |matplotlib|3.3.2|
-|numpy|1.19.1|
+|numpy|1.19.2|
 |scipy|1.5.2|
 |statsmodels|0.12.0|
 |scikit-learn|0.23.2|
 |seaborn|0.11.0|
 |h5py|2.10.0|
 |hdf5|1.10.6|
-|pandas|1.1.2|
-|pandoc|2.10.1|
+|pandas|1.1.3|
+|pandoc|2.11|
 |ipython|7.18.1|
 |ipykernel|5.3.4|
-|dask|2.28.0|
+|dask|2.30.0|
 
 ## _Pip Packages_
 

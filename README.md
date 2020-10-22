@@ -3,7 +3,7 @@
 
 ## _Environment for Data Science created with Docker!_
 
-## _Version_: 2020-10-13
+## _Version_: 2020-10-22
 
 ## _Description_
 
@@ -23,15 +23,15 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 |qt|5.12.9|
 |sqlite|3.33.0|
 |cmake|3.18.2|
-|markdown|3.3.1|
+|markdown|3.3.2|
 |powerline-status|2.7|
 |zstd|1.4.5|
 |gawk|5.1.0|
 |mawk|1.3.4|
-|llvm-openmp|10.0.1|
-|gcc_linux-64|7.5.0|
-|gxx_linux-64|7.5.0|
-|gfortran_linux-64|7.5.0|
+|llvm-openmp|11.0.0|
+|gcc_linux-64|9.3.0|
+|gxx_linux-64|9.3.0|
+|gfortran_linux-64|9.3.0|
 
 ### _R Project_
 
@@ -41,7 +41,7 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 |r-devtools|2.3.2|
 |r-tidyverse|1.3.0|
 |r-ggplot2|3.3.2|
-|r-rmarkdown|2.4|
+|r-rmarkdown|2.5|
 |r-markdown|1.1|
 
 ### _Python Modules_
@@ -88,7 +88,7 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 |h5py|2.10.0|
 |hdf5|1.10.6|
 |pandas|1.1.3|
-|pandoc|2.11|
+|pandoc|2.11.0.2|
 |ipython|7.18.1|
 |ipykernel|5.3.4|
 |dask|2.30.0|

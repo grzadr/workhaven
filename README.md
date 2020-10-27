@@ -3,7 +3,7 @@
 
 ## _Environment for Data Science created with Docker!_
 
-## _Version_: 2020-10-22
+## _Version_: 2020-10-27
 
 ## _Description_
 
@@ -23,7 +23,7 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 |qt|5.12.9|
 |sqlite|3.33.0|
 |cmake|3.18.2|
-|markdown|3.3.2|
+|markdown|3.3.3|
 |powerline-status|2.7|
 |zstd|1.4.5|
 |gawk|5.1.0|
@@ -72,7 +72,7 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 |jupyter_nbextensions_configurator|0.4.1|
 |jupyter_contrib_nbextensions|0.5.1|
 |jupyterhub|1.1.0|
-|jupyterlab|2.2.8|
+|jupyterlab|2.2.9|
 |jupyterthemes|0.20.0|
 
 ### _Python Scientific Modules_
@@ -88,10 +88,11 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 |h5py|2.10.0|
 |hdf5|1.10.6|
 |pandas|1.1.3|
-|pandoc|2.11.0.2|
+|pandoc|2.11.0.4|
 |ipython|7.18.1|
 |ipykernel|5.3.4|
 |dask|2.30.0|
+|nltk|3.5|
 
 ## _Pip Packages_
 
@@ -99,7 +100,7 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 
 |      Name      |     Version     |
 |:---------------|:----------------|
-|rpy2|3.3.5|
+|rpy2|3.3.6|
 
 ### _Plotting_
 
@@ -112,4 +113,10 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 |      Name      |     Version     |
 |:---------------|:----------------|
 |roman|3.3|
+
+### _WebScraping_
+
+|      Name      |     Version     |
+|:---------------|:----------------|
+|readability-lxml|0.8.1|
 

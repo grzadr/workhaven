@@ -1,6 +1,6 @@
 FROM jupyter/minimal-notebook:95ccda3619d0
 
-LABEL version=2020-11-01
+LABEL version=2020-11-02
 LABEL maintainer="Adrian Grzemski <adrian.grzemski@gmail.com>"
 
 USER root
@@ -162,3 +162,5 @@ ADD --chown=jovyan:users JupyterConfig/jupyter_notebook_config.py /home/jovyan/.
 ADD --chown=jovyan:users RConfig/Rprofile ${HOME}/.Rprofile
 
 WORKDIR /home/jovyan
+
+RUN mkdir /home/jovyan/data

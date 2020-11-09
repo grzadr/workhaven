@@ -1,6 +1,6 @@
 FROM jupyter/minimal-notebook:42f4c82a07ff
 
-LABEL version=2020-11-08
+LABEL version=2020-11-09
 LABEL maintainer="Adrian Grzemski <adrian.grzemski@gmail.com>"
 
 USER root
@@ -147,7 +147,6 @@ RUN mkdir .vim \
  && jupyter nbextension enable printview/main \
  && jupyter nbextension enable table_beautifier/main \
  && jupyter nbextension enable contrib_nbextensions_help_item/main \
- && jupyter nbextension enable hinterland/hinterland \
  && jupyter nbextension enable python-markdown/main \
  && jupyter nbextension enable snippets/main \
  && jupyter nbextension enable varInspector/main \

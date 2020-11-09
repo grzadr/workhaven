@@ -3,7 +3,7 @@
 
 ## _Environment for Data Science created with Docker!_
 
-## _Version_: 2020-11-08
+## _Version_: 2020-11-09
 
 ## _Description_
 

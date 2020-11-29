@@ -3,7 +3,7 @@
 
 ## _Environment for Data Science created with Docker!_
 
-## _Version_: 2020-11-09
+## _Version_: 2020-11-29
 
 ## _Description_
 
@@ -22,7 +22,7 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 |python|3.8.6|
 |qt|5.12.9|
 |sqlite|3.33.0|
-|cmake|3.18.4|
+|cmake|3.19.1|
 |markdown|3.3.3|
 |powerline-status|2.7|
 |zstd|1.4.5|
@@ -48,7 +48,7 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 
 |      Name      |     Version     |
 |:---------------|:----------------|
-|natsort|7.0.1|
+|natsort|7.1.0|
 |cython|0.29.21|
 |sqlalchemy|1.3.20|
 |beautifulsoup4|4.9.3|
@@ -67,11 +67,11 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 
 |      Name      |     Version     |
 |:---------------|:----------------|
-|notebook|6.1.4|
+|notebook|6.1.5|
 |nbconvert|6.0.7|
 |jupyter_nbextensions_configurator|0.4.1|
 |jupyter_contrib_nbextensions|0.5.1|
-|jupyterhub|1.2.1|
+|jupyterhub|1.2.2|
 |jupyterlab|2.2.9|
 |jupyterthemes|0.20.0|
 
@@ -79,7 +79,7 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 
 |      Name      |     Version     |
 |:---------------|:----------------|
-|matplotlib|3.3.2|
+|matplotlib|3.3.3|
 |numpy|1.19.4|
 |scipy|1.5.3|
 |statsmodels|0.12.1|
@@ -88,7 +88,7 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 |h5py|3.1.0|
 |hdf5|1.10.6|
 |pandas|1.1.4|
-|pandoc|2.11.0.4|
+|pandoc|2.11.2|
 |ipython|7.19.0|
 |ipykernel|5.3.4|
 |dask|2.30.0|

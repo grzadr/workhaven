@@ -1,6 +1,6 @@
-FROM jupyter/minimal-notebook:a0a544e6dc6e
+FROM jupyter/minimal-notebook:703d8b2dcb88
 
-LABEL version=2021-01-02
+LABEL version=2021-01-04
 LABEL maintainer="Adrian Grzemski <adrian.grzemski@gmail.com>"
 
 USER root

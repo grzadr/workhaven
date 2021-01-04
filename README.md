@@ -3,7 +3,7 @@
 
 ## _Environment for Data Science created with Docker!_
 
-## _Version_: 2021-01-02
+## _Version_: 2021-01-04
 
 ## _Description_
 
@@ -92,6 +92,7 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 |ipykernel|5.4.2|
 |dask|2020.12.0|
 |nltk|3.5|
+|mlflow|1.13.1|
 
 ## _Pip Packages_
 

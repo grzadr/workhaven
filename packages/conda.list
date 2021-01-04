@@ -61,3 +61,4 @@ ipython=7.19.0
 ipykernel=5.4.2
 dask=2020.12.0
 nltk=3.5
+mlflow=1.13.1

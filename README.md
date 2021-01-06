@@ -3,7 +3,7 @@
 
 ## _Environment for Data Science created with Docker!_
 
-## _Version_: 2021-01-04
+## _Version_: 2021-01-06
 
 ## _Description_
 
@@ -71,7 +71,7 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 |jupyter_nbextensions_configurator|0.4.1|
 |jupyter_contrib_nbextensions|0.5.1|
 |jupyterhub|1.3.0|
-|jupyterlab|3.0.0|
+|jupyterlab|3.0.1|
 |jupyterthemes|0.20.0|
 
 ### _Python Scientific Modules_
@@ -79,7 +79,7 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 |      Name      |     Version     |
 |:---------------|:----------------|
 |matplotlib|3.3.3|
-|numpy|1.19.4|
+|numpy|1.19.5|
 |scipy|1.6.0|
 |statsmodels|0.12.1|
 |scikit-learn|0.24.0|

@@ -7,6 +7,8 @@ CONTAINER_NAME="workhaven_check_updates"
 CONDA_LIST_OLD="packages/conda.list.old"
 CONDA_LIST="packages/conda.list"
 
+./update_dockerfile.sh
+
 cat $CONDA_LIST > $CONDA_LIST_OLD
 
 docker run --name ${CONTAINER_NAME} --rm -it "grzadr/workhaven:${1:-latest}" condaup --dry-run --json | \

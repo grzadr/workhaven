@@ -1,6 +1,6 @@
 FROM jupyter/minimal-notebook@sha256:9cea750e610cf084be244e6c61c3b16506ef4acdc7e410cf8239959cdd89f16e
 
-LABEL version=2021-01-06
+LABEL version=2021-01-07
 LABEL maintainer="Adrian Grzemski <adrian.grzemski@gmail.com>"
 
 USER root

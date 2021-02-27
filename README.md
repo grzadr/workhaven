@@ -3,7 +3,7 @@
 
 ## _Environment for Data Science created with Docker!_
 
-## _Version_: 2021-02-12
+## _Version_: 2021-02-27
 
 ## _Description_
 
@@ -19,11 +19,11 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 
 |      Name      |     Version     |
 |:---------------|:----------------|
-|python|3.8.6|
+|python|3.8.8|
 |qt|5.12.9|
 |sqlite|3.34.0|
-|cmake|3.19.4|
-|markdown|3.3.3|
+|cmake|3.19.6|
+|markdown|3.3.4|
 |powerline-status|2.7|
 |zstd|1.4.8|
 |gawk|5.1.0|
@@ -41,7 +41,7 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 |r-devtools|2.3.2|
 |r-tidyverse|1.3.0|
 |r-ggplot2|3.3.3|
-|r-rmarkdown|2.6|
+|r-rmarkdown|2.7|
 |r-markdown|1.1|
 
 ### _Python Modules_
@@ -49,15 +49,15 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 |      Name      |     Version     |
 |:---------------|:----------------|
 |natsort|7.1.1|
-|cython|0.29.21|
+|cython|0.29.22|
 |sqlalchemy|1.3.23|
 |beautifulsoup4|4.9.3|
 |autopep8|1.5.5|
 |black|20.8b1|
 |flake8-black|0.2.1|
 |flake8|3.8.4|
-|mypy|0.800|
-|pylint|2.6.0|
+|mypy|0.812|
+|pylint|2.7.1|
 |yapf|0.30.0|
 |pytest|6.2.2|
 |setuptools|52.0.0|
@@ -71,7 +71,7 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 |jupyter_nbextensions_configurator|0.4.1|
 |jupyter_contrib_nbextensions|0.5.1|
 |jupyterhub|1.3.0|
-|jupyterlab|3.0.7|
+|jupyterlab|3.0.9|
 |jupyterthemes|0.20.0|
 
 ### _Python Scientific Modules_
@@ -88,11 +88,11 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 |hdf5|1.10.6|
 |pandas|1.2.2|
 |pandoc|2.11.4|
-|ipython|7.20.0|
-|ipykernel|5.4.3|
+|ipython|7.21.0|
+|ipykernel|5.5.0|
 |dask|2021.2.0|
 |nltk|3.5|
-|mlflow|1.13.1|
+|mlflow|1.14.0|
 
 ## _Pip Packages_
 

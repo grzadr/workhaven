@@ -11,7 +11,7 @@ CONDA_LIST="packages/conda.list"
 
 cat $CONDA_LIST > $CONDA_LIST_OLD
 
-docker run --name ${CONTAINER_NAME} --rm -it "grzadr/workhaven:${1:-latest}" condaup --dry-run --json | \
+docker run --name ${CONTAINER_NAME} --rm -it "grzadr/workhaven:${1:-latest}" /bin/bash -c "{ conda list --json ; condaup --dry-run --json ; }" | \
 grep -Pzo -e '\"LINK\"\:\s+\[([^\]]+)\]' | \
 head -n -1 | \
 tail -n +2 | \
@@ -29,8 +29,8 @@ BEGIN{
 
     print name "=" version;
     next;
-}
-' | awk '
+}t ' | \
+awk '
 BEGIN{
   RS = "\n";
   FS = "=";
@@ -45,4 +45,3 @@ FNR==NR {
   if ($1 in registry){print $1 "=" registry[$1]} else {print $0}
 }
 ' - $CONDA_LIST_OLD > $CONDA_LIST
-

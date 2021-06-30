@@ -14,3 +14,5 @@ gfortran-9-multilib
 libsqlite3-dev
 libssl-dev
 gdebi
+google-chrome-stable
+unzip

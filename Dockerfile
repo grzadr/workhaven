@@ -1,6 +1,6 @@
-FROM jupyter/minimal-notebook@sha256:e8facd65208abfacc85c8fa99883db743f73b4d5e4e074078315868466c063bf
+FROM jupyter/minimal-notebook@sha256:4181ca5238cd1c0c62110b8cdec567208d089c3e607362e6dc73cbe2fbcdf382
 
-LABEL version=2021-06-28
+LABEL version=2021-06-29
 LABEL maintainer="Adrian Grzemski <adrian.grzemski@gmail.com>"
 
 USER root
@@ -31,6 +31,8 @@ RUN apt update \
     apt-utils \
     >> logs/apt_install.log \
  && add-apt-repository ppa:jonathonf/vim -y \
+ && wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add - \
+ && sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list' \
  && apt_vacuum
 
 RUN mkdir packages && chown -R jovyan:users packages
@@ -112,7 +114,7 @@ WORKDIR $GIT_DIRECTORY
 
 RUN git clone -j8 --recurse-submodules https://github.com/grzadr/biosh.git
 
-ENV PATH=${PATH}:$GIT_DIRECTORY/biosh
+ENV PATH=${PATH}:$GIT_DIRECTORY/biosh:${HOME}/
 
 RUN ldconfig
 
@@ -138,7 +140,7 @@ RUN mkdir .vim \
  && vim -c "PlugInstall|qa"
 
 #Configure Jupyter notebooks
- RUN jupyter contrib nbextension install --user \
+RUN jupyter contrib nbextension install --user \
  && jupyter nbextension install https://github.com/drillan/jupyter-black/archive/master.zip --user \
  && jupyter nbextension enable scroll_down/main \
  && jupyter nbextension enable toc2/main \
@@ -159,6 +161,19 @@ RUN mkdir .vim \
 ADD --chown=jovyan:users JupyterConfig/jupyter_notebook_config.py /home/jovyan/.jupyter/jupyter_notebook_config.py
 
 ADD --chown=jovyan:users RConfig/Rprofile ${HOME}/.Rprofile
+
+USER root
+
+# Download the Chrome Driver
+RUN wget -O /tmp/chromedriver.zip http://chromedriver.storage.googleapis.com/$(curl -sS chromedriver.storage.googleapis.com/LATEST_RELEASE)/chromedriver_linux64.zip
+
+# Unzip the Chrome Driver into /usr/local/bin directory
+RUN unzip /tmp/chromedriver.zip chromedriver -d /usr/local/bin/
+
+# Set display port as an environment variable
+ENV DISPLAY=:99
+
+USER jovyan
 
 WORKDIR /home/jovyan
 

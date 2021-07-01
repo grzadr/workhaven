@@ -3,7 +3,7 @@
 
 ## _Environment for Data Science created with Docker!_
 
-## _Version_: 2021-06-29
+## _Version_: 2021-06-30
 
 ## _Description_
 
@@ -32,7 +32,6 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 |gcc_linux-64|9.3.0|
 |gxx_linux-64|9.3.0|
 |gfortran_linux-64|9.3.0|
-|geckodriver|NA|
 
 ### _R Project_
 
@@ -58,11 +57,11 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 |flake8-black|0.2.1|
 |flake8|3.9.2|
 |mypy|0.910|
-|pylint|2.8.3|
+|pylint|2.9.1|
 |yapf|0.31.0|
 |pytest|6.2.4|
 |setuptools|52.0.0|
-|selenium|NA|
+|selenium|3.141.0|
 
 ### _Jupyter packages_
 

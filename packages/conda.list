@@ -32,11 +32,11 @@ black=21.5b2
 flake8-black=0.2.1
 flake8=3.9.2
 mypy=0.910
-pylint=2.8.3
+pylint=2.9.1
 yapf=0.31.0
 pytest=6.2.4
 setuptools=52.0.0
-selenium
+selenium=3.141.0
 
 ### Jupyter packages
 notebook=6.4.0

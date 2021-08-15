@@ -3,7 +3,7 @@
 
 ## _Environment for Data Science created with Docker!_
 
-## _Version_: 2021-07-09
+## _Version_: 2021-08-15
 
 ## _Description_
 
@@ -19,10 +19,10 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 
 |      Name      |     Version     |
 |:---------------|:----------------|
-|python|3.8.10|
+|python|3.8.11|
 |qt|5.12.9|
 |sqlite|3.36.0|
-|cmake|3.20.5|
+|cmake|3.21.1|
 |markdown|3.3.4|
 |powerline-status|2.7|
 |zstd|1.5.0|
@@ -41,7 +41,7 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 |r-devtools|2.4.2|
 |r-tidyverse|1.3.1|
 |r-ggplot2|3.3.5|
-|r-rmarkdown|2.9|
+|r-rmarkdown|2.10|
 |r-markdown|1.1|
 
 ### _Python Modules_
@@ -49,15 +49,15 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 |      Name      |     Version     |
 |:---------------|:----------------|
 |natsort|7.1.1|
-|cython|0.29.23|
-|sqlalchemy|1.4.20|
+|cython|0.29.24|
+|sqlalchemy|1.4.22|
 |beautifulsoup4|4.9.3|
 |autopep8|1.5.7|
-|black|21.5b2|
-|flake8-black|0.2.1|
+|black|21.7b0|
+|flake8-black|0.2.3|
 |flake8|3.9.2|
 |mypy|0.910|
-|pylint|2.9.3|
+|pylint|2.9.6|
 |yapf|0.31.0|
 |pytest|6.2.4|
 |setuptools|52.0.0|
@@ -67,33 +67,33 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 
 |      Name      |     Version     |
 |:---------------|:----------------|
-|notebook|6.4.0|
+|notebook|6.4.3|
 |nbconvert|6.1.0|
 |jupyter_nbextensions_configurator|0.4.1|
 |jupyter_contrib_nbextensions|0.5.1|
-|jupyterhub|1.4.1|
-|jupyterlab|3.0.16|
+|jupyterhub|1.4.2|
+|jupyterlab|3.1.6|
 |jupyterthemes|0.20.0|
 
 ### _Python Scientific Modules_
 
 |      Name      |     Version     |
 |:---------------|:----------------|
-|matplotlib|3.4.2|
-|numpy|1.21.0|
+|matplotlib|3.4.3|
+|numpy|1.21.1|
 |scipy|1.7.0|
 |statsmodels|0.12.2|
 |scikit-learn|0.24.2|
 |seaborn|0.11.1|
 |h5py|3.3.0|
 |hdf5|1.10.6|
-|pandas|1.3.0|
-|pandoc|2.14.0.3|
-|ipython|7.25.0|
-|ipykernel|6.0.1|
-|dask|2021.6.2|
+|pandas|1.3.1|
+|pandoc|2.14.1|
+|ipython|7.26.0|
+|ipykernel|6.1.0|
+|dask|2021.8.0|
 |nltk|3.6.2|
-|mlflow|1.18.0|
+|mlflow|1.19.0|
 
 ## _Pip Packages_
 

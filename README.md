@@ -3,7 +3,7 @@
 
 ## _Environment for Data Science created with Docker!_
 
-## _Version_: 2021-09-05
+## _Version_: 2021-09-20
 
 ## _Description_
 
@@ -19,7 +19,7 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 
 |      Name      |     Version     |
 |:---------------|:----------------|
-|python|3.8.11|
+|python|3.8.12|
 |qt|5.12.9|
 |sqlite|3.36.0|
 |cmake|3.21.2|
@@ -41,7 +41,7 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 |r-devtools|2.4.2|
 |r-tidyverse|1.3.1|
 |r-ggplot2|3.3.5|
-|r-rmarkdown|2.10|
+|r-rmarkdown|2.11|
 |r-markdown|1.1|
 
 ### _Python Modules_
@@ -51,28 +51,28 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 |natsort|7.1.1|
 |cython|0.29.24|
 |sqlalchemy|1.4.23|
-|beautifulsoup4|4.9.3|
+|beautifulsoup4|4.10.0|
 |autopep8|1.5.7|
-|black|21.8b0|
+|black|21.9b0|
 |flake8-black|0.2.3|
 |flake8|3.9.2|
 |mypy|0.910|
-|pylint|2.10.2|
+|pylint|2.11.1|
 |yapf|0.31.0|
 |pytest|6.2.5|
-|setuptools|57.4.0|
+|setuptools|58.0.4|
 |selenium|3.141.0|
 
 ### _Jupyter packages_
 
 |      Name      |     Version     |
 |:---------------|:----------------|
-|notebook|6.4.3|
+|notebook|6.4.4|
 |nbconvert|6.1.0|
 |jupyter_nbextensions_configurator|0.4.1|
 |jupyter_contrib_nbextensions|0.5.1|
 |jupyterhub|1.4.2|
-|jupyterlab|3.1.10|
+|jupyterlab|3.1.12|
 |jupyterthemes|0.20.0|
 
 ### _Python Scientific Modules_
@@ -81,16 +81,16 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 |:---------------|:----------------|
 |matplotlib|3.4.3|
 |numpy|1.21.2|
-|scipy|1.7.0|
+|scipy|1.7.1|
 |statsmodels|0.12.2|
 |scikit-learn|0.24.2|
 |seaborn|0.11.2|
 |h5py|3.4.0|
 |hdf5|1.12.1|
-|pandas|1.3.2|
+|pandas|1.3.3|
 |pandoc|2.14.2|
 |ipython|7.27.0|
-|ipykernel|6.3.1|
+|ipykernel|6.4.1|
 |dask|2021.9.0|
 |nltk|3.6.2|
 |mlflow|1.20.2|

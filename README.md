@@ -3,7 +3,7 @@
 
 ## _Environment for Data Science created with Docker!_
 
-## _Version_: 2021-09-29
+## _Version_: 2021-10-06
 
 ## _Description_
 
@@ -60,7 +60,7 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 |pylint|2.11.1|
 |yapf|0.31.0|
 |pytest|6.2.5|
-|setuptools|58.0.4|
+|setuptools|58.2.0|
 |selenium|3.141.0|
 
 ### _Jupyter packages_
@@ -72,7 +72,7 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 |jupyter_nbextensions_configurator|0.4.1|
 |jupyter_contrib_nbextensions|0.5.1|
 |jupyterhub|1.4.2|
-|jupyterlab|3.1.14|
+|jupyterlab|3.1.17|
 |jupyterthemes|0.20.0|
 
 ### _Python Scientific Modules_
@@ -82,7 +82,7 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 |matplotlib|3.4.3|
 |numpy|1.21.2|
 |scipy|1.7.1|
-|statsmodels|0.12.2|
+|statsmodels|0.13.0|
 |scikit-learn|1.0|
 |seaborn|0.11.2|
 |h5py|3.4.0|
@@ -92,7 +92,7 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 |ipython|7.28.0|
 |ipykernel|6.4.1|
 |dask|2021.9.1|
-|nltk|3.6.3|
+|nltk|3.6.4|
 |mlflow|1.20.2|
 
 ## _Pip Packages_

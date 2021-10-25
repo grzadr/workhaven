@@ -3,7 +3,7 @@
 
 ## _Environment for Data Science created with Docker!_
 
-## _Version_: 2021-10-06
+## _Version_: 2021-10-25
 
 ## _Description_
 
@@ -50,12 +50,12 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 |:---------------|:----------------|
 |natsort|7.1.1|
 |cython|0.29.24|
-|sqlalchemy|1.4.25|
+|sqlalchemy|1.4.26|
 |beautifulsoup4|4.10.0|
-|autopep8|1.5.7|
+|autopep8|1.6.0|
 |black|21.9b0|
 |flake8-black|0.2.3|
-|flake8|3.9.2|
+|flake8|4.0.1|
 |mypy|0.910|
 |pylint|2.11.1|
 |yapf|0.31.0|
@@ -67,12 +67,12 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 
 |      Name      |     Version     |
 |:---------------|:----------------|
-|notebook|6.4.4|
+|notebook|6.4.5|
 |nbconvert|6.2.0|
 |jupyter_nbextensions_configurator|0.4.1|
 |jupyter_contrib_nbextensions|0.5.1|
 |jupyterhub|1.4.2|
-|jupyterlab|3.1.17|
+|jupyterlab|3.2.1|
 |jupyterthemes|0.20.0|
 
 ### _Python Scientific Modules_
@@ -80,19 +80,19 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 |      Name      |     Version     |
 |:---------------|:----------------|
 |matplotlib|3.4.3|
-|numpy|1.21.2|
+|numpy|1.21.3|
 |scipy|1.7.1|
 |statsmodels|0.13.0|
 |scikit-learn|1.0|
 |seaborn|0.11.2|
 |h5py|3.4.0|
 |hdf5|1.12.1|
-|pandas|1.3.3|
+|pandas|1.3.4|
 |pandoc|2.14.2|
 |ipython|7.28.0|
-|ipykernel|6.4.1|
-|dask|2021.9.1|
-|nltk|3.6.4|
+|ipykernel|6.4.2|
+|dask|2021.10.0|
+|nltk|3.6.5|
 |mlflow|1.20.2|
 
 ## _Pip Packages_

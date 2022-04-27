@@ -1,6 +1,6 @@
-FROM jupyter/minimal-notebook@sha256:1866eaf6a7fc0fc9564650a296625a6a4be24f4c392c95d9b547b92483dad99d
+FROM jupyter/minimal-notebook@sha256:bf5f9018016b090e59e9abf87531e0031c1535a39d89fe87c7a34e064d330bc0
 
-LABEL version=2022-01-01
+LABEL version=2022-04-27
 LABEL maintainer="Adrian Grzemski <adrian.grzemski@gmail.com>"
 
 USER root
@@ -44,7 +44,7 @@ RUN apt update \
     >> logs/apt_install.logs \
  && apt_vacuum
 
-ENV RSTUDIO_DEB rstudio-server-1.3.959-amd64.deb
+ENV RSTUDIO_DEB rstudio-2022.02.1-461-amd64.deb
 
 RUN apt update \
  && wget https://download2.rstudio.org/server/bionic/amd64/${RSTUDIO_DEB} \

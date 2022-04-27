@@ -3,7 +3,7 @@
 
 ## _Environment for Data Science created with Docker!_
 
-## _Version_: 2022-01-01
+## _Version_: 2022-04-27
 
 ## _Description_
 
@@ -19,16 +19,16 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 
 |      Name      |     Version     |
 |:---------------|:----------------|
-|python|3.8.12|
+|python|3.8.13|
 |qt|5.12.9|
-|sqlite|3.37.0|
-|cmake|3.21.3|
+|sqlite|3.38.2|
+|cmake|3.23.1|
 |markdown|3.3.6|
 |powerline-status|2.7|
-|zstd|1.5.1|
+|zstd|1.5.2|
 |gawk|5.1.0|
 |mawk|1.3.4|
-|llvm-openmp|11.1.0|
+|llvm-openmp|13.0.1|
 |gcc_linux-64|9.3.0|
 |gxx_linux-64|9.3.0|
 |gfortran_linux-64|9.3.0|
@@ -41,38 +41,38 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 |r-devtools|2.4.3|
 |r-tidyverse|1.3.1|
 |r-ggplot2|3.3.5|
-|r-rmarkdown|2.11|
+|r-rmarkdown|2.14|
 |r-markdown|1.1|
 
 ### _Python Modules_
 
 |      Name      |     Version     |
 |:---------------|:----------------|
-|natsort|8.0.2|
-|cython|0.29.26|
-|sqlalchemy|1.4.29|
-|beautifulsoup4|4.10.0|
+|natsort|8.1.0|
+|cython|0.29.28|
+|sqlalchemy|1.4.36|
+|beautifulsoup4|4.11.1|
 |autopep8|1.6.0|
-|black|21.12b0|
-|flake8-black|0.2.3|
+|black|22.3.0|
+|flake8-black|0.3.0|
 |flake8|4.0.1|
-|mypy|0.930|
-|pylint|2.12.2|
-|yapf|0.31.0|
-|pytest|6.2.5|
-|setuptools|60.2.0|
-|selenium|3.141.0|
+|mypy|0.942|
+|pylint|2.13.7|
+|yapf|0.32.0|
+|pytest|7.1.2|
+|setuptools|62.1.0|
+|selenium|4.1.0|
 
 ### _Jupyter packages_
 
 |      Name      |     Version     |
 |:---------------|:----------------|
-|notebook|6.4.6|
-|nbconvert|6.3.0|
+|notebook|6.4.11|
+|nbconvert|6.5.0|
 |jupyter_nbextensions_configurator|0.4.1|
 |jupyter_contrib_nbextensions|0.5.1|
-|jupyterhub|2.0.1|
-|jupyterlab|3.2.5|
+|jupyterhub|2.2.2|
+|jupyterlab|3.3.4|
 |jupyterthemes|0.20.0|
 
 ### _Python Scientific Modules_
@@ -80,20 +80,20 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 |      Name      |     Version     |
 |:---------------|:----------------|
 |matplotlib|3.5.1|
-|numpy|1.21.5|
-|scipy|1.7.3|
-|statsmodels|0.13.1|
+|numpy|1.22.3|
+|scipy|1.8.0|
+|statsmodels|0.13.2|
 |scikit-learn|1.0.2|
 |seaborn|0.11.2|
 |h5py|3.6.0|
 |hdf5|1.12.1|
-|pandas|1.3.5|
-|pandoc|2.16.2|
-|ipython|7.30.1|
-|ipykernel|6.6.0|
-|dask|2021.12.0|
-|nltk|3.6.7|
-|mlflow|1.22.0|
+|pandas|1.4.2|
+|pandoc|2.18|
+|ipython|8.2.0|
+|ipykernel|6.13.0|
+|dask|2022.4.1|
+|nltk|3.7|
+|mlflow|1.25.1|
 
 ## _Pip Packages_
 

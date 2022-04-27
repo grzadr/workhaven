@@ -40,7 +40,7 @@ JUPYTER_LABEL="${ARG_LABEL:-latest}"
 JUPYTER_COMMAND="${ARG_COMMAND:-}"
 
 if [ -n "$JUPYTER_COMMAND" ]; then
-  JUPYTER_COMMAND="/bin/bash -c $JUPYTER_COMMAND"
+  JUPYTER_COMMAND="/bin/bash -c ${JUPYTER_COMMAND}"
 fi
 
 # if (( $# > 0)); then
@@ -56,4 +56,4 @@ docker run -it \
   --rm \
   --workdir /home/jovyan/data \
   grzadr/workhaven:${JUPYTER_LABEL} \
-  ${JUPYTER_COMMAND}
+  `${JUPYTER_COMMAND}`

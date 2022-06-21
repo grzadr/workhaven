@@ -1,6 +1,6 @@
-FROM jupyter/minimal-notebook@sha256:bf5f9018016b090e59e9abf87531e0031c1535a39d89fe87c7a34e064d330bc0
+FROM jupyter/minimal-notebook@sha256:edede2004c961f49d72a2451875e5d3b4104e076bc8abc3ffcaf04f3652f59aa
 
-LABEL version=2022-04-27
+LABEL version=2022-06-21
 LABEL maintainer="Adrian Grzemski <adrian.grzemski@gmail.com>"
 
 USER root
@@ -44,15 +44,15 @@ RUN apt update \
     >> logs/apt_install.logs \
  && apt_vacuum
 
-ENV RSTUDIO_DEB rstudio-2022.02.1-461-amd64.deb
+#ENV RSTUDIO_DEB rstudio-2022.02.1-461-amd64.deb
 
-RUN apt update \
- && wget https://download2.rstudio.org/server/bionic/amd64/${RSTUDIO_DEB} \
- && gdebi -n ${RSTUDIO_DEB} \
- && rm ${RSTUDIO_DEB} \
- && apt_vacuum
+#RUN apt update \
+# && wget https://download2.rstudio.org/server/bionic/amd64/${RSTUDIO_DEB} \
+# && gdebi -n ${RSTUDIO_DEB} \
+# && rm ${RSTUDIO_DEB} \
+# && apt_vacuum
 
-ADD RConfig/rserver.conf /etc/rstudio/rserver.conf
+#ADD RConfig/rserver.conf /etc/rstudio/rserver.conf
 
 RUN (update-alternatives --remove-all gcc || true) \
  && (update-alternatives --remove-all g++ || true) \
@@ -162,18 +162,18 @@ ADD --chown=jovyan:users JupyterConfig/jupyter_notebook_config.py /home/jovyan/.
 
 ADD --chown=jovyan:users RConfig/Rprofile ${HOME}/.Rprofile
 
-USER root
+#USER root
 
 # Download the Chrome Driver
-RUN wget -O /tmp/chromedriver.zip http://chromedriver.storage.googleapis.com/$(curl -sS chromedriver.storage.googleapis.com/LATEST_RELEASE)/chromedriver_linux64.zip
+#RUN wget -O /tmp/chromedriver.zip http://chromedriver.storage.googleapis.com/$(curl -sS chromedriver.storage.googleapis.com/LATEST_RELEASE)/chromedriver_linux64.zip
 
 # Unzip the Chrome Driver into /usr/local/bin directory
-RUN unzip /tmp/chromedriver.zip chromedriver -d /usr/local/bin/
+#RUN unzip /tmp/chromedriver.zip chromedriver -d /usr/local/bin/
 
 # Set display port as an environment variable
-ENV DISPLAY=:99
+#ENV DISPLAY=:99
 
-USER jovyan
+#USER jovyan
 
 WORKDIR /home/jovyan
 

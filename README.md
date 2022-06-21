@@ -3,7 +3,7 @@
 
 ## _Environment for Data Science created with Docker!_
 
-## _Version_: 2022-04-27
+## _Version_: 2022-06-21
 
 ## _Description_
 
@@ -21,14 +21,14 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 |:---------------|:----------------|
 |python|3.8.13|
 |qt|5.12.9|
-|sqlite|3.38.2|
-|cmake|3.23.1|
-|markdown|3.3.6|
+|sqlite|3.38.5|
+|cmake|3.23.2|
+|markdown|3.3.7|
 |powerline-status|2.7|
 |zstd|1.5.2|
 |gawk|5.1.0|
 |mawk|1.3.4|
-|llvm-openmp|13.0.1|
+|llvm-openmp|14.0.4|
 |gcc_linux-64|9.3.0|
 |gxx_linux-64|9.3.0|
 |gfortran_linux-64|9.3.0|
@@ -40,7 +40,7 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 |r-base|4.0.5|
 |r-devtools|2.4.3|
 |r-tidyverse|1.3.1|
-|r-ggplot2|3.3.5|
+|r-ggplot2|3.3.6|
 |r-rmarkdown|2.14|
 |r-markdown|1.1|
 
@@ -49,18 +49,18 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 |      Name      |     Version     |
 |:---------------|:----------------|
 |natsort|8.1.0|
-|cython|0.29.28|
+|cython|0.29.30|
 |sqlalchemy|1.4.36|
 |beautifulsoup4|4.11.1|
 |autopep8|1.6.0|
 |black|22.3.0|
-|flake8-black|0.3.0|
+|flake8-black|0.3.3|
 |flake8|4.0.1|
-|mypy|0.942|
-|pylint|2.13.7|
+|mypy|0.960|
+|pylint|2.13.9|
 |yapf|0.32.0|
 |pytest|7.1.2|
-|setuptools|62.1.0|
+|setuptools|62.3.2|
 |selenium|4.1.0|
 
 ### _Jupyter packages_
@@ -71,29 +71,29 @@ Additionally [AGizmo](https://github.com/grzadr/agizmo) library is installed.
 |nbconvert|6.5.0|
 |jupyter_nbextensions_configurator|0.4.1|
 |jupyter_contrib_nbextensions|0.5.1|
-|jupyterhub|2.2.2|
-|jupyterlab|3.3.4|
+|jupyterhub|2.3.0|
+|jupyterlab|3.4.2|
 |jupyterthemes|0.20.0|
 
 ### _Python Scientific Modules_
 
 |      Name      |     Version     |
 |:---------------|:----------------|
-|matplotlib|3.5.1|
-|numpy|1.22.3|
+|matplotlib|3.5.2|
+|numpy|1.22.4|
 |scipy|1.8.0|
 |statsmodels|0.13.2|
-|scikit-learn|1.0.2|
+|scikit-learn|1.1.1|
 |seaborn|0.11.2|
 |h5py|3.6.0|
 |hdf5|1.12.1|
 |pandas|1.4.2|
 |pandoc|2.18|
-|ipython|8.2.0|
+|ipython|8.3.0|
 |ipykernel|6.13.0|
-|dask|2022.4.1|
+|dask|2022.5.1|
 |nltk|3.7|
-|mlflow|1.25.1|
+|mlflow|1.26.0|
 
 ## _Pip Packages_
 
